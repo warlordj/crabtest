@@ -3,6 +3,6 @@ import { Handler } from "aws-lambda";
 export const handler: Handler = async (_event) => {
   return {
     statusCode: 200,
-    body: `hello12345.`,
+    body: `hello123456.`,
   };
 };
