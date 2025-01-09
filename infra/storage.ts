@@ -3,7 +3,7 @@ export const bucket = new sst.aws.Bucket("MyBucket", {
 });
 
 export const exampleBucketPublicAccessBlock = new aws.s3.BucketPublicAccessBlock("MyBucket", {
-    bucket: bucket.id,
+    bucket: bucket.name,
     blockPublicAcls: true,
     blockPublicPolicy: true,
     ignorePublicAcls: true,
