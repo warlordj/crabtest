@@ -7,13 +7,12 @@ export {}
 declare module "sst" {
   export interface Resource {
     "MyApi": {
-      "name": string
-      "type": "sst.aws.Function"
+      "type": "sst.aws.ApiGatewayV2"
       "url": string
     }
-    "MyBucket": {
-      "name": string
-      "type": "sst.aws.Bucket"
+    "MyWeb": {
+      "type": "sst.aws.StaticSite"
+      "url": string
     }
   }
 }
