@@ -11,7 +11,7 @@ export const exampleBucketPublicAccessBlock = new aws.s3.BucketPublicAccessBlock
 });
 
 export const siteBucketWebsiteConfig = new aws.s3.BucketWebsiteConfigurationV2("MyBucketStatic", {
-    bucket: bucket.id,
+    bucket: bucket.name,
     indexDocument: {
         suffix: "index.html",
     },
