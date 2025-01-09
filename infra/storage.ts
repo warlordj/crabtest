@@ -15,5 +15,5 @@ export const siteBucketWebsiteConfig = new aws.s3.BucketWebsiteConfigurationV2("
     indexDocument: {
         suffix: "index.html",
     },
-    errorDocument: "index.html",
+    errorDocument: {suffix: "index.html",},
 });
