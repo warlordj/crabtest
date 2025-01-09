@@ -1,8 +1,9 @@
 import { Handler } from "aws-lambda";
 
 export const handler: Handler = async (_event) => {
-  return {
-    statusCode: 200,
-    body: `hello12345678.`,
-  };
+
+
+
+  return "abcdef"
+
 };
